@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Notifcation\\": "src/"
+            "Notifcations\\": "src/"
         }
     },
     "authors": [
@@ -16,10 +16,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Notifcation\\NotifcationServiceProvider"
+                "Notifcations\\NotifcationServiceProvider"
             ],
             "aliases": {
-                "Notify":  "Notifcation\\Facades\\Notify"
+                "Notify":  "Notifcations\\Facades\\Notify"
             }
         }
     },
