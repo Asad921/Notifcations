@@ -27,6 +27,8 @@ class NotifcationServiceProvider extends ServiceProvider
     public function boot()
     {
         dd('notifcation Arrived');
+        $this->loadMigrationsFrom(__DIR__.'/Database');
+
         
     }
 }
