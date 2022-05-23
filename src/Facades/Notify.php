@@ -11,7 +11,7 @@ class Notify extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'Notice';
+        return 'notifcation';
     }
     protected static function store($notifiable, $parent_type, $message){
         $data = [
