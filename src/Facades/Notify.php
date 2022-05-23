@@ -30,6 +30,6 @@ class Notify extends Facade
             "data"              => serialize($data),
         ];
 
-        Notification::create($data);
+        Notifcation::create($data);
     }
 }
