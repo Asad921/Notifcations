@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Sjsolutionz\\Notifcation\\' => array($baseDir . '/src'),
+    'Notifcation\\' => array($baseDir . '/src'),
 );
