@@ -6,14 +6,14 @@ use Illuminate\Support\Facades\Facade;
 use Notifcations\Notifcation;
 use Auth;
 
-
 class Notify extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'notifcation';
+        return 'notifcations';
     }
-    protected static function store($notifiable, $parent_type, $message){
+    protected static function store($notifiable, $parent_type, $message)
+    {
         $data = [
             
             'parent_id'     => Auth::user()->id,
@@ -32,5 +32,4 @@ class Notify extends Facade
 
         Notification::create($data);
     }
-    
 }
