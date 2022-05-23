@@ -32,4 +32,15 @@ class Notify extends Facade
 
         Notifcation::create($data);
     }
+
+    protected static function get_notification($notifications){
+        if(!empty($notifications)){
+            foreach ($notifications as $key => $value) {
+                $value->data = unserialize($value->data);
+            }
+        }
+
+        return $notifications;
+    }
+    
 }
