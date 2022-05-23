@@ -13,7 +13,7 @@ class Notify extends Facade
     {
         return 'Notifcations';
     }
-    protected static function notifications($notifiable, $parent_type, $message){
+    protected static function store($notifiable, $parent_type, $message){
         $data = [
             
             'parent_id'     => Auth::user()->id,
