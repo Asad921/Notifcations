@@ -12,7 +12,7 @@ class Notify extends Facade
     {
         return 'Notifcations';
     }
-    protected static function store($notifiable, $parent_type, $message)
+    protected static function store($notifiable, $parent_type, $message,$notifiable_type)
     {
         $data = [
             
@@ -25,7 +25,7 @@ class Notify extends Facade
 
         $data = [
             "type"              => $parent_type,
-            "notifiable_type"   => User::class,
+            "notifiable_type"   => $notifiable_type,
             "notifiable_id"     => $notifiable,
             "data"              => serialize($data),
         ];
