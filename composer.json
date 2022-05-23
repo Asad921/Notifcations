@@ -19,7 +19,7 @@
                 "Notifcations\\NotifcationServiceProvider"
             ],
             "aliases": {
-                "Notify":  "Notifcations\\Facades\\Notify"
+                "Notifcation":  "Notifcations\\Facades\\Notify"
             }
         }
     },

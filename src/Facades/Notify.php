@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Facade;
 use Notifcations\Notifcation;
 
 
-class notify extends Facade
+class Notify extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'notify';
+        return 'Notifcations';
     }
     
 }
