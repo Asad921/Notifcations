@@ -1,6 +1,6 @@
 <?php
 
-namespace Notifacation;
+namespace Notifacations;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,9 +13,9 @@ class NotifcationServiceProvider extends ServiceProvider
      */
     public function register()
     {    
-        $this->app->make('Notifcation\Notifcation');
+        $this->app->make('Notifcations\Notifcation');
         $this->app->bind('Notifcation',function() {
-            return new \Notifcation\Facades\Notify;
+            return new \Notifcations\Facades\Notify;
          });
     }
 
@@ -27,6 +27,6 @@ class NotifcationServiceProvider extends ServiceProvider
     public function boot()
     {
         dd('notifcation Arrived');
-        $this->loadMigrationsFrom(__DIR__.'/Database');
+        // $this->loadMigrationsFrom(__DIR__.'/Database');
     }
 }

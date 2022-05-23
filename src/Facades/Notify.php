@@ -1,9 +1,9 @@
 <?php
 
-namespace Notifcation\Facades;
+namespace Notifcations\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Notifcation\Notifcation;
+use Notifcations\Notifcation;
 
 
 class notify extends Facade
