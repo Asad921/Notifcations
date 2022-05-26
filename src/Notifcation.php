@@ -13,8 +13,8 @@ class Notifcation extends Model
    
     protected $fillable = [
         'type',
-        'notifiable_type ',
-        'notifiable_id ',
+        'notifiable_type',
+        'notifiable_id',
         'data',
         'read_at',
         
